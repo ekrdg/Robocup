@@ -23,6 +23,7 @@ def moveto(robotIP,temp,PORT=9559):
         temp = math.max(temp,-10)
         theta = (math.pi/2)*(temp/-10)
     time.sleep(5)
+    
     motionProxy.moveto(0,0,theta)
     motionProxy.moveto(x,0,0)
     time.sleep(10)
